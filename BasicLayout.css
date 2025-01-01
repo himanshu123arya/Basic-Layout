@@ -1,0 +1,140 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: gray;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+
+#wrapper {
+    max-width: 1000px;
+    width: 90%; 
+    margin: 0 auto;
+    background: white;
+    border: 1px solid #ddd;
+    overflow: hidden; 
+}
+
+
+#header {
+    background-color: red;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+#menu {
+    background-color: lightsalmon;
+    overflow: hidden;
+}
+
+#menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+#menu li {
+    display: inline-block;
+}
+
+#menu li a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+#menu li a:hover {
+    background-color: #f7a68b;
+    color: white;
+}
+
+
+#sidebar {
+    width: 25%; 
+    background: lightblue;
+    float: right;
+    padding: 15px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#sidebar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#sidebar li {
+    margin-bottom: 10px;
+}
+
+#sidebar li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+#sidebar li a:hover {
+    text-decoration: underline;
+}
+
+#content {
+    width: 70%; 
+    float: left;
+    padding: 15px;
+    line-height: 1.6;
+}
+
+
+#footer {
+    background-color: lightsalmon;
+    clear: both; 
+    padding: 10px 20px;
+    text-align: right;
+    font-size: 14px;
+    color: black;
+}
+
+@media (max-width: 768px) {
+    #sidebar,
+    #content {
+        width: 100%;
+        float: none;
+        padding: 10px;
+    }
+
+    #menu li {
+        display: block;
+        text-align: left;
+    }
+
+    #header {
+        height: auto;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    #menu li a {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+
+    #footer {
+        text-align: center;
+        font-size: 12px;
+    }
+}
